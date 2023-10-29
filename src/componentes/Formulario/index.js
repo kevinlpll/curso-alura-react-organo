@@ -12,17 +12,22 @@ const Formulario = () => {
       "UX e Design",
       "Mobile",
       "Inovação e gestão"
-   ]
+   ];
    
+   const onSave = (event) =>{
+      event.preventDefault();
+      console.log("Enviado");
+   }
+
 
    return (
    <section className="formulario">
-      <form>
+      <form onSubmit={onSave}>
          <h2>Preencha os dados para criar o card do colaborador</h2>
-         <CampoTexto label="Nome" placeholder="Informe o seu nome"/>
-         <CampoTexto label="Cargo" placeholder="Informe o seu cargo"/>
+         <CampoTexto required={true} label="Nome" placeholder="Informe o seu nome"/>
+         <CampoTexto required={true} label="Cargo" placeholder="Informe o seu cargo"/>
          <CampoTexto label="Imagem" placeholder="Informe o endereço da imagem"/>
-         <ListaSuspensa label="Times" itens={times} />
+         <ListaSuspensa required={true} label="Times" itens={times} />
          <Botao>Criar card</Botao>
       </form>
    </section>
