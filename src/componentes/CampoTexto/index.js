@@ -1,4 +1,4 @@
-import "./index.css"
+import "./CampoTexto.css"
 
 export default function CampoTexto(props) {
 

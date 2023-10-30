@@ -1,4 +1,4 @@
-import "./index.css"
+import "./ListaSuspensa.css"
 
 const ListaSuspensa = (props) =>{
 

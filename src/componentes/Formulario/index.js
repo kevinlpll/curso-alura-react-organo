@@ -1,4 +1,4 @@
-import "./index.css"
+import "./Formulario.css"
 import CampoTexto from "../CampoTexto"
 import ListaSuspensa from "../ListaSuspensa"
 import Botao from "../Botao"

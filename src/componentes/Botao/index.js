@@ -1,4 +1,4 @@
-import "./index.css"
+import "./Botao.css"
 
 export default function Botao(props){
 
