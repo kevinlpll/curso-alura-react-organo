@@ -5,15 +5,10 @@ import Botao from "../Botao"
 import { useState } from "react"
 
 const Formulario = (props) => {
-   const times = [
-      "Programação",
-      "Front-end",
-      "Data Science",
-      "Devops",
-      "UX e Design",
-      "Mobile",
-      "Inovação e gestão"
-   ];
+
+
+   let times = []
+   props.times.forEach( (time) => times.push(time.nome) )
    
    const [ nome, setNome ] =  useState("")
    const [ cargo, setCargo ] =  useState("")
