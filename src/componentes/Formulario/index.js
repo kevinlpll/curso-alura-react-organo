@@ -5,10 +5,6 @@ import Botao from "../Botao"
 import { useState } from "react"
 
 const Formulario = (props) => {
-
-
-   let times = []
-   props.times.forEach( (time) => times.push(time.nome) )
    
    const [ nome, setNome ] =  useState("")
    const [ cargo, setCargo ] =  useState("")
@@ -49,7 +45,7 @@ const Formulario = (props) => {
          <ListaSuspensa 
             required={true} 
             label="Times" 
-            itens={ times }
+            itens={ props.times }
             valor={ time }
             aoAlterado={(valor) => setTime(valor)}
          />
