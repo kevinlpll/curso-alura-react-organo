@@ -9,7 +9,7 @@ const Time = (props) => {
    }
 
    return (
-      <section className="time" style={ estilos.time } >
+      props.colaboradores.length > 0 && <section className="time" style={ estilos.time } >
          <h3 style={{ borderColor: props.corPrimaria }}>{ props.nome }</h3>
          <div className="colaboradores">
             { props.colaboradores.map( colaborador => <Colaborador 
