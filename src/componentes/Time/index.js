@@ -3,7 +3,6 @@ import "./Time.css"
 
 
 const Time = (props) => {
-   console.log(props)
    const estilos = {
       time: { backgroundColor: props.corSecundaria},
    }
